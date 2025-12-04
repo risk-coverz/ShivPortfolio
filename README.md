@@ -4,10 +4,11 @@
 
 ##  [Click Here to View My Live Portfolio](https://shivpatel-5.github.io/ShivPortfolio/)
 
-### Technologies & Tools
+### Applications & Tools
 ![CATIA](https://img.shields.io/badge/CATIA-V5-blue)
-![MATLAB](https://img.shields.io/badge/MATLAB-Simulink-orange)
 ![ANSYS](https://img.shields.io/badge/ANSYS-CFD-yellow)
+![SolidWorks](https://img.shields.io/badge/SolidWorks-red)
+![MATLAB](https://img.shields.io/badge/MATLAB-Simulink-orange)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
