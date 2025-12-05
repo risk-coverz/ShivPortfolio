@@ -72,43 +72,41 @@
 
         .pdf-btn i { margin-right: 8px; }
 
-        /* Images */
-        .comp-img-container {
+        /* --- IMAGE FIX --- */
+        .comp-img-container, .comp-grid {
             width: 100%;
             margin-bottom: 2rem;
-            border-radius: 4px;
-            overflow: hidden;
-            border: 1px solid #333;
         }
 
+        /* SINGLE IMAGE */
         .comp-img-container img {
             width: 100%;
-            height: auto;
+            height: auto; /* THIS SHOWS THE FULL IMAGE */
             display: block;
-            opacity: 0.85;
+            border-radius: 4px;
+            border: 1px solid #333;
+            opacity: 0.9;
             transition: 0.3s;
         }
 
-        .comp-entry:hover .comp-img-container img { opacity: 1; }
-
+        /* TWO IMAGES SIDE BY SIDE */
         .comp-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-bottom: 2rem;
         }
         
         .comp-grid img {
             width: 100%;
-            height: 350px; /* Fixed height for clean grid */
-            object-fit: cover;
+            height: auto; /* THIS SHOWS THE FULL IMAGE */
+            object-fit: contain; /* Ensures nothing is cut off */
             border-radius: 4px;
             border: 1px solid #333;
-            opacity: 0.85;
+            opacity: 0.9;
             transition: 0.3s;
         }
         
-        .comp-entry:hover .comp-grid img { opacity: 1; }
+        .comp-entry:hover img { opacity: 1; transform: scale(1.01); }
 
         p { color: #ccc; line-height: 1.8; margin-bottom: 1rem; }
         .highlight-text { color: #fff; font-weight: bold; }
@@ -179,21 +177,21 @@
             </div>
 
             <div class="comp-grid">
-                <img src="Glider2.jpg" alt="Glider Launch">
+                <img src="Glider4.jpg" alt="Glider Team">
                 <img src="Glider1.jpg" alt="Shiv with Glider">
             </div>
 
-            <p>The goal of this project was to design and construct a glider capable of flying the furthest possible distance while weighing the least. We utilized the <strong>NACA M22 airfoil</strong> and manufactured the wing using composite materials to optimize lift and durability.</p>
+            <p>The goal of this project was to design and construct a glider aircraft capable of flying the furthest possible distance while weighing the least. We utilized the <strong>NACA M22 airfoil</strong> and manufactured the wing using composite materials to optimize lift and durability.</p>
             
-            <p>Requirements included a wingspan under 29.5 inches and a tail fin area less than 30% of the wing. All non-wing components were designed in CAD and manufactured using <strong>laser cutting and 3D printing</strong>.</p>
+            <p>Several requirements had to be met: the final design length had to be under 29.5 inches, fuselage width under 2 inches, and tail fin area less than 30% of the wing area. All non-wing components were designed in CAD and manufactured using <strong>laser cutting and 3D printing</strong> to optimize weight and durability.</p>
             
-            <p>The glider successfully survived all three flight attempts, demonstrating the effectiveness of our manufacturing process. The final design balanced structural integrity with aerodynamic efficiency.</p>
+            <p>The competition scored designs based on glide distance divided by final weight. Our final glider successfully survived all three flight attempts, demonstrating the effectiveness of our manufacturing process. The final design balanced structural integrity with aerodynamic efficiency.</p>
         </div>
 
     </main>
 
     <footer>
-        <p>&copy; Shiv Pinteshkumar Patel</p>
+        <p>&copy; 2024 Shiv Patel. Designed with Precision.</p>
     </footer>
 </body>
 </html>
